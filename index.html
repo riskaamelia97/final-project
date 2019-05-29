@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Collection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Header -->
+    <div class="header">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/books.jpg" class="img-fluid" alt="Los Angeles" width="800" height="400">
+                    <div class="carousel-caption">
+                        <h3>Book is our Bestfriend</h3>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/book2.jpg" class="img-fluid" alt="Chicago" width="800" height="400">
+                    <div class="carousel-caption">
+                        <h3>Book is our Bestfriend</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/book3.jpg" class="img-fluid" alt="New York" width="800" height="400">
+                    <div class="carousel-caption">
+                        <h3>Book is our Bestfriend</h3>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        </br>
+        <h1>My Book Collection</h1>
+    </div>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> =
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="kolek.html">Collection <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <img src="image/kame.png" class="img-fluid" alt="me" style="height:200px;">
+
+            <p> This picture i draw with ibispaintx software on my smartphone. This picture resemble as my avatar </p>
+            <h3>My Favorite things to do</h3>
+            <p>Below are my favorite things to do :</p>
+            <img src="image/game.png" class="img-fluid" alt="gaming" style="height:60px;"> gaming ,
+            <img src="image/draw.png" class="img-fluid" alt="drawing" style="height:60px;"> drawing and
+            <img src="image/read.png" class="img-fluid" alt="reading" style="height:60px;"> reading
+        </div>
+        <div class="main ">
+            <h2>Preview of my book Collection</h2>
+            <h5>This contain a few books that i recommend </h5>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img src="image/npb.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Negeri Para Bedebah</h5>
+                        <p>Buku Karya Tere Liye yang mengisahkan tentang negeri yang yang berisikan bedebah negara alias mafia </p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal">Read More</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <h6 class="modal-title">Informasi Peminjaman Buku</h6>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Anda bisa meminjam buku ini dengan mengisi kontak anda dihalaman kontak</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image/pergi.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pergi</h5>
+                        <p>Buku Karya Tere Liye</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal">Read More</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <h6 class="modal-title">Informasi Peminjaman Buku</h6>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Anda bisa meminjam buku ini dengan mengisi kontak anda dihalaman kontak</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image/cdb.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceroz dan Batozar</h5>
+                        <p>Buku 4.5 serial Bumi dari karya Tere Liye</p>
+                    </div>
+                    <div class="card-footer">
+
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal">Read More</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <h6 class="modal-title">Informasi Peminjaman Buku</h6>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Anda bisa meminjam buku ini dengan mengisi kontak anda dihalaman kontak</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer ">
+        <div class="copyright">
+            <img src="image/githubicon.png" alt="git" style="width: 20px; height:20px;"> riskaamelia97 © 2019
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
